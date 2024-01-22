@@ -44,6 +44,44 @@
 
 <body>
     <header class="container mx-auto mb-24">
+        <!-- navbar section Start  -->
+        <div class="navbar bg-base-100 my-10">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-red-500" fill="" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>Contracts</a></li>
+                        <li><a>Services</a></li>
+
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl md:text-5xl font-extrabold">Coffee <span
+                        class="text-amber-400">Shop</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl font-medium text-[#F00]">
+                    <li><a>Home</a></li>
+                    <li><a>Products</a></li>
+                    <li><a>Contracts</a></li>
+                    <li><a>Services</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-amber-400 bg-[#F00] text-xl font-medium">Join Our Party</a>
+            </div>
+        </div>
+
+        <!-- Navbar section End  -->
+        <!-- Bannar Section Start  -->
         <section class="banner-container">
             <div class="hero ">
                 <div class="hero-content flex gap-x-5 flex-col md:flex-row lg:flex-row">
@@ -53,7 +91,13 @@
                             tea time at <br> The Coffee Shop</h1>
                         <p class=" text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
                             Buds.</p>
-                        <button class="btn btn-primary">Get Started</button>
+                        <button
+                            class="btn bg-gradient-to-r from-red-500 from-0% to-orange-500 to-100% text-amber-400 text-xl">Explore
+                            More <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <path d="M4.5 19.7788L19.5 4.77881M19.5 4.77881H8.25M19.5 4.77881V16.0288"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
                     </div>
                     <div>
                         <img src="./images/banner.png" class="max-w-sm " />
@@ -73,6 +117,7 @@
         </section>
     </header>
     <main class="container mx-auto">
+        <!-- Bannar Section End  -->
         <!-- Feature Section Start  -->
         <secton class="feature-container text-center">
             <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
@@ -82,10 +127,8 @@
                 suffered alteration
                 in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
 
-            <!-- Cart Start  -->
             <div
                 class="cart-container grid grid-cols-1 m-7  md:grid-cols-2 lg:grid-cols-4 gap-5 md:m-0 lg:m-0 items-center justify-center">
-                <!-- first cart  -->
                 <div class="card   drop-shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <figure class="px-10 pt-10">
                         <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
@@ -96,7 +139,6 @@
 
                     </div>
                 </div>
-                <!-- Second Cart  -->
                 <div class="card   drop-shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <figure class="px-10 pt-10">
                         <img src="./images/tea-2.png" alt="coffee" class="rounded-xl" />
@@ -108,7 +150,6 @@
                     </div>
                 </div>
 
-                <!-- Third Cart  -->
                 <div class="card   drop-shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <figure class="px-10 pt-10">
                         <img src="./images/tea-3.png" alt="coffee" class="rounded-xl" />
@@ -120,7 +161,6 @@
                     </div>
                 </div>
 
-                <!-- Fourth Card  -->
                 <div class="card   drop-shadow-lg bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4]">
                     <figure class="px-10 pt-10">
                         <img src="./images/tea-4.png" alt="coffee" class="rounded-xl" />
@@ -287,7 +327,50 @@
         <!-- News Section End -->
 
     </main>
-    <footer></footer>
+
+
+    <footer
+        class="footer p-10 bg-base-200 text-base-content  bg-gradient-to-r from-[#FF00001A] from-0% to-[#FF89381A] to-100% mt-24  mx-auto ">
+        <nav>
+            <header class="footer-title">Quick Links</header>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Insurence</a>
+            <a class="link link-hover">Privacy Policy</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Our Services</header>
+            <a class="link link-hover">Life Insurence</a>
+            <a class="link link-hover">Car Insurence</a>
+            <a class="link link-hover">Health Insurence</a>
+            <a class="link link-hover">House Insurence</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Help</header>
+            <a class="link link-hover">FAO</a>
+            <a class="link link-hover">Contract Us</a>
+        </nav>
+        <form>
+            <header class="footer-title">Subscribe to our newsletter</header>
+            <fieldset class="form-control w-80">
+
+                <div class="flex flex-row gap-2">
+                    <div class="border-b-2 border-[#1c1c1c]">
+                        <input type="text" placeholder="Enter Your Email"
+                            class="input  join-item bg-gradient-to-r from-[#FF00001A] from-0% to-[#FF89381A] to-100% " />
+                    </div>
+                    <div class="">
+                        <button
+                            class="btn bg-gradient-to-r from-red-500 from-0% to-orange-500 to-100% w-16 h-16 rounded-full"><i
+                                class="fa-solid fa-greater-than"></i></button>
+                    </div>
+
+                </div>
+            </fieldset>
+        </form>
+
+
+    </footer>
 
 </body>
 
